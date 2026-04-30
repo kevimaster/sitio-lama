@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nosotros — LAMA</title>
+<meta name="description" content="El equipo, la misión y la historia del LAMA — Laboratorio de Mediaciones Algorítmicas, Universidad del Valle, Cali, Colombia.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/main.css?v=4">
+<style>
+  h1,h2,h3,h4,h5,h6 { font-family: 'Playfair Display', serif !important; }
+  .intro-bar { background: #F5EFE0 !important; }
+  .mission-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 2rem; }
+  .team-2col { display: flex; flex-direction: column; gap: 1.5rem; max-width: 760px; margin: 0 auto; }
+  .team-2col .team-card { display: flex; align-items: center; gap: 2.2rem; text-align: left; padding: 2rem 2.2rem; border-left: 4px solid var(--c0); }
+  .team-2col .team-avatar { width: 140px; height: 140px; flex-shrink: 0; }
+  @media (max-width: 560px) {
+    .team-2col .team-card { flex-direction: column; text-align: center; border-left: none; border-top: 4px solid var(--c0); }
+  }
+  @media (max-width: 640px) {
+    .mission-grid { grid-template-columns: 1fr; }
+    .team-2col { grid-template-columns: 1fr; max-width: 360px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ══ NAV ══════════════════════════════════════════ -->
+<nav id="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo"><img src="assets/img/logo.png" alt="LAMA"></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menú"><span></span><span></span><span></span></button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="artefactos.html">Artefactos</a></li>
+      <li><a href="para-docentes.html">Para Docentes</a></li>
+      <li><a href="investigacion.html">Investigación</a></li>
+      <li><a href="comunidad.html">Comunidad</a></li>
+      <li><a href="nosotros.html" class="active">Nosotros</a></li>
+      <li class="nav-cta"><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ══ HERO ══════════════════════════════════════════ -->
+<section class="hero hero-sm">
+  <div class="hero-bg" style="background-image:url('assets/img/Header_Home.jpg')"></div>
+  <div class="hero-content">
+    <span class="sec-label" style="color:rgba(227,233,216,.8)">El proyecto</span>
+    <h1 class="reveal">Nosotros</h1>
+    <p class="hero-sub reveal" style="transition-delay:.15s">Somos un laboratorio de investigación y creación pedagógica radicado en la Escuela de Comunicación Social de la Universidad del Valle, Cali, Colombia.</p>
+  </div>
+</section>
+
+<!-- ══ MISIÓN ═════════════════════════════════════════ -->
+<section class="sec sec-cream">
+  <div class="wrap" style="max-width:860px">
+    <div class="reveal">
+      <span class="sec-label">Quiénes somos</span>
+      <h2>Un laboratorio situado</h2>
+      <p>LAMA nació en 2025 luego de preguntarnos por qué no existe en América Latina un conjunto de herramientas y entornos pedagógicos para enseñar críticamente sobre los algoritmos.</p>
+      <p>Teníamos teoría: Zuboff, Noble, Crawford, O'Neil en el norte global; Martín-Barbero, Freire, García Canclini en el sur. Pero no teníamos artefactos que llevaran esas ideas al aula de una manera que los estudiantes pudieran experienciar directamente.</p>
+      <p>Así que decidimos crearlos. No importando marcos del norte global, sino desarrollando herramientas situadas en nuestra realidad, desde nuestra historia intelectual, con nuestros contextos como referencia.</p>
+    </div>
+    <div class="mission-grid reveal">
+      <div style="background:var(--c4);border-radius:6px;padding:2rem">
+        <h3 style="font-size:1.1rem;margin-bottom:.8rem;color:var(--c2)">Misión</h3>
+        <p style="font-size:.93rem;margin:0;line-height:1.8">Crear artefactos pedagógicos interactivos de código abierto para la alfabetización algorítmica crítica, contribuir a la investigación sobre mediaciones algorítmicas, desarrollar artefactos interactivos para el mejoramiento del aprendizaje social y construir comunidad entre quienes trabajan por una ciudadanía digital soberana.</p>
+      </div>
+      <div style="background:var(--c4);border-radius:6px;padding:2rem">
+        <h3 style="font-size:1.1rem;margin-bottom:.8rem;color:var(--c2)">Visión</h3>
+        <p style="font-size:.93rem;margin:0;line-height:1.8">Un continente latinoamericano donde la comprensión crítica de los sistemas algorítmicos sea parte de la formación básica ciudadana.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ EQUIPO ══════════════════════════════════════════ -->
+<section class="sec sec-sage" id="equipo">
+  <div class="wrap">
+    <div style="text-align:center;margin-bottom:2.5rem" class="reveal">
+      <h2>El equipo</h2>
+    </div>
+    <div class="team-2col">
+      <div class="team-card reveal d1">
+        <div class="team-avatar"><img src="assets/img/Kevin_Garcia.jpg" alt="Kevin Alexis García" style="width:100%;height:100%;object-fit:cover;object-position:center 15%;display:block;"></div>
+        <h4>Kevin Alexis García</h4>
+        <div class="team-role">Investigador Principal</div>
+        <p class="team-bio">Doctor en Comunicación Social por la Universidad Pompeu Fabra, de Barcelona. Especialista en estudios de plataformas y alfabetización algorítmica crítica. Profesor de la Escuela de Comunicación Social, Universidad del Valle.</p>
+      </div>
+      <div class="team-card reveal d2">
+        <div class="team-avatar"><img src="assets/img/Julian_Gonzalez.jpg" alt="Julián Alberto González Mina" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
+        <h4>Julián Alberto González Mina</h4>
+        <div class="team-role">Investigador Principal</div>
+        <p class="team-bio">Doctor en Psicología por la Universidad del Valle, Cali, Colombia. Especialista en estudios de plataformas, periodismo, diseño y creación de juegos. Profesor de la Escuela de Comunicación Social, Universidad del Valle.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ VALORES ════════════════════════════════════════ -->
+<section class="sec sec-cream">
+  <div class="wrap">
+    <div style="text-align:center;margin-bottom:2.5rem" class="reveal">
+      <span class="sec-label" style="justify-content:center">Principios</span>
+      <h2>Lo que nos guía</h2>
+    </div>
+    <div class="why-cards">
+      <div class="why-card reveal d1">
+        <div class="why-num">🌎</div>
+        <h3>Situados en el sur</h3>
+        <p>No importamos marcos del norte global. Partimos de la tradición intelectual latinoamericana y de los problemas concretos de nuestra región.</p>
+      </div>
+      <div class="why-card reveal d2">
+        <div class="why-num">🔓</div>
+        <h3>Código abierto siempre</h3>
+        <p>Todos nuestros artefactos, guías pedagógicas y publicaciones son de libre acceso. El conocimiento regresa a la comunidad que lo hace posible.</p>
+      </div>
+      <div class="why-card reveal d3">
+        <div class="why-num">⚖️</div>
+        <h3>Crítica sin catastrofismo</h3>
+        <p>No demonizamos la tecnología. Buscamos comprensión matizada: visibilizar mecanismos de poder sin cerrar la posibilidad de imaginar tecnologías más justas.</p>
+      </div>
+      <div class="why-card reveal d1">
+        <div class="why-num">🤝</div>
+        <h3>Co-construcción</h3>
+        <p>Los mejores artefactos los hemos diseñado con docentes, no para docentes. La comunidad no es una audiencia: es co-investigadora y co-diseñadora.</p>
+      </div>
+      <div class="why-card reveal d2">
+        <div class="why-num">🎮</div>
+        <h3>Aprendizaje experiencial</h3>
+        <p>Los conceptos se internalizan cuando se viven. Nuestros artefactos crean situaciones de aprendizaje genuinas donde los estudiantes actúan y reflexionan.</p>
+      </div>
+      <div class="why-card reveal d3">
+        <div class="why-num">🔬</div>
+        <h3>Rigor académico</h3>
+        <p>La accesibilidad no está reñida con el rigor. Nuestros artefactos se basan en investigación sólida y nuestras guías citan las fuentes en las que se fundamentan.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CTA ════════════════════════════════════════════ -->
+<div class="territorial">
+  <div class="territorial-bg" style="background-image:url('assets/img/Header.jpg')"></div>
+  <div class="territorial-content">
+    <span class="sec-label reveal">¿Trabajamos juntos?</span>
+    <h2 class="reveal" style="transition-delay:.12s">Siempre con la puerta abierta</h2>
+    <p class="reveal" style="transition-delay:.24s">Estamos interesados en alianzas con instituciones educativas, grupos de investigación, organizaciones de la sociedad civil y periodistas que trabajen temas relacionados. Escríbenos.</p>
+    <div class="territorial-ctas reveal" style="transition-delay:.36s">
+      <a href="contacto.html" class="btn btn-primary">Contactar al equipo</a>
+      <a href="comunidad.html" class="btn btn-outline-white">Unirme a la comunidad</a>
+    </div>
+  </div>
+</div>
+
+<!-- ══ FOOTER ════════════════════════════════════════ -->
+<footer>
+  <div class="footer-above">
+    <div class="footer-above-grid">
+      <div class="footer-brand">
+        <img src="assets/img/logo.png" alt="LAMA">
+        <p>Laboratorio de Mediaciones Algorítmicas. Escuela de Comunicación Social, Universidad del Valle, Cali, Colombia.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Explorar</h4>
+        <ul>
+          <li><a href="artefactos.html">Artefactos</a></li>
+          <li><a href="para-docentes.html">Para Docentes</a></li>
+          <li><a href="investigacion.html">Investigación</a></li>
+          <li><a href="comunidad.html">Comunidad</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Proyecto</h4>
+        <ul>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="nosotros.html#equipo">Equipo</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Recursos</h4>
+        <ul>
+          <li><a href="http://simuladores.lama.lat" target="_blank" rel="noopener">Simuladores</a></li>
+          <li><a href="investigacion.html#publicaciones">Publicaciones</a></li>
+          <li><a href="para-docentes.html#guias">Guías pedagógicas</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-primary">
+    <div class="footer-primary-inner">
+      <p>© 2024 LAMA — Laboratorio de Mediaciones Algorítmicas. Universidad del Valle.</p>
+      <p>Código abierto · <a href="#">GitHub</a> · <a href="#">CC BY-SA 4.0</a></p>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

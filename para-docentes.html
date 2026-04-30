@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Para Docentes — LAMA</title>
+<meta name="description" content="Recursos pedagógicos, guías y artefactos de LAMA para usar en el aula. Alfabetización algorítmica crítica para docentes.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/main.css?v=4">
+<style>
+  .intro-bar { display: none; }
+  h1,h2,h3,h4,h5,h6 { font-family: 'Playfair Display', serif !important; }
+  .desafio-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start; }
+  @media (max-width: 768px) { .desafio-grid { grid-template-columns: 1fr; gap: 2rem; } }
+</style>
+</head>
+<body>
+
+<!-- ══ NAV ══════════════════════════════════════════ -->
+<nav id="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo"><img src="assets/img/logo.png" alt="LAMA"></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menú"><span></span><span></span><span></span></button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="artefactos.html">Artefactos</a></li>
+      <li><a href="para-docentes.html" class="active">Para Docentes</a></li>
+      <li><a href="investigacion.html">Investigación</a></li>
+      <li><a href="comunidad.html">Comunidad</a></li>
+      <li><a href="nosotros.html">Nosotros</a></li>
+      <li class="nav-cta"><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ══ HERO ══════════════════════════════════════════ -->
+<section class="hero hero-sm">
+  <div class="hero-bg" style="background-image:url('assets/img/Header.jpg')"></div>
+  <div class="hero-content">
+    <span class="sec-label" style="color:rgba(227,233,216,.8)">Recursos educativos</span>
+    <h1>Para Docentes</h1>
+    <p class="hero-sub">Todo lo que necesitas para incorporar la alfabetización algorítmica crítica en tu aula. Guías pedagógicas, planes de clase y artefactos listos para usar.</p>
+    <div class="hero-btns">
+      <a href="#guias" class="btn btn-primary">Ver guías pedagógicas</a>
+      <a href="contacto.html" class="btn btn-outline-white">Solicitar taller</a>
+    </div>
+  </div>
+</section>
+
+<!-- ══ INTRO BAR ══════════════════════════════════════ -->
+<div class="intro-bar">
+  <div class="intro-bar-inner">
+    Todos los recursos son de acceso libre · Diseñados para secundaria y universidad · Adaptables a cualquier asignatura
+  </div>
+</div>
+
+<!-- ══ POR QUÉ EN EL AULA ════════════════════════════ -->
+<section class="sec sec-cream">
+  <div class="wrap">
+    <div class="reveal desafio-grid">
+      <div>
+        <span class="sec-label">El desafío pedagógico</span>
+        <h2>Los algoritmos ya están en tu aula</h2>
+        <p>Tus estudiantes interactúan con algoritmos cada vez que abren su teléfono. TikTok decide qué ven. Google decide qué encuentran. Spotify decide qué escuchan. Sin comprensión crítica, son usuarios pasivos de sistemas que no entienden.</p>
+        <p>LAMA ofrece herramientas concretas para transformar esa experiencia cotidiana en aprendizaje profundo. No necesitas ser experto en tecnología: nuestros artefactos son accesibles, están documentados y vienen con guías paso a paso.</p>
+        <a href="artefactos.html" class="btn btn-primary">Explorar artefactos</a>
+      </div>
+      <div>
+        <div class="why-card" style="margin-bottom:1rem">
+          <div class="why-num" style="font-size:2rem">📚</div>
+          <h3 style="font-size:1rem;margin-bottom:.4rem">Transversal a todas las asignaturas</h3>
+          <p style="font-size:.88rem">Desde matemáticas hasta ciencias sociales, la dimensión algorítmica es relevante en cualquier área del conocimiento.</p>
+        </div>
+        <div class="why-card" style="margin-bottom:1rem">
+          <div class="why-num" style="font-size:2rem">🎮</div>
+          <h3 style="font-size:1rem;margin-bottom:.4rem">Aprendizaje experiencial</h3>
+          <p style="font-size:.88rem">Los estudiantes aprenden haciendo. Nuestros simuladores generan situaciones de aprendizaje genuinas, no solo conceptos abstractos.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-num" style="font-size:2rem">🌎</div>
+          <h3 style="font-size:1rem;margin-bottom:.4rem">Perspectiva latinoamericana</h3>
+          <p style="font-size:.88rem">No importamos marcos pedagógicos del norte global. Los contextos, ejemplos y discusiones son situados en nuestra realidad.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CÓMO FUNCIONA ══════════════════════════════════ -->
+<section class="sec sec-sage">
+  <div class="wrap" style="max-width:760px">
+    <div style="text-align:center;margin-bottom:3rem" class="reveal">
+      <span class="sec-label" style="justify-content:center">Metodología</span>
+      <h2>Cómo funciona en el aula</h2>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:.8rem" class="reveal">
+      <details style="background:var(--c5);border-radius:6px;border:1px solid var(--c6);padding:1.2rem 1.5rem">
+        <summary style="font-family:'Playfair Display',serif;font-weight:600;color:var(--c2);cursor:pointer;display:flex;justify-content:space-between;align-items:center;list-style:none">
+          <span style="display:flex;align-items:center;gap:.8rem"><span style="width:28px;height:28px;background:var(--c0);border-radius:100px;display:inline-flex;align-items:center;justify-content:center;color:#fff;font-size:.8rem;font-weight:700;flex-shrink:0">1</span> Elige un artefacto</span>
+          <span style="color:var(--c0);flex-shrink:0;margin-left:1rem">+</span>
+        </summary>
+        <p style="margin-top:.8rem;font-size:.92rem;color:var(--c3);line-height:1.7;margin-bottom:0;padding-left:2.2rem">Navega el catálogo y selecciona el simulador que mejor se adapte a tu asignatura, nivel educativo y objetivo de aprendizaje.</p>
+      </details>
+      <details style="background:var(--c5);border-radius:6px;border:1px solid var(--c6);padding:1.2rem 1.5rem">
+        <summary style="font-family:'Playfair Display',serif;font-weight:600;color:var(--c2);cursor:pointer;display:flex;justify-content:space-between;align-items:center;list-style:none">
+          <span style="display:flex;align-items:center;gap:.8rem"><span style="width:28px;height:28px;background:var(--c0);border-radius:100px;display:inline-flex;align-items:center;justify-content:center;color:#fff;font-size:.8rem;font-weight:700;flex-shrink:0">2</span> Descarga la guía pedagógica</span>
+          <span style="color:var(--c0);flex-shrink:0;margin-left:1rem">+</span>
+        </summary>
+        <p style="margin-top:.8rem;font-size:.92rem;color:var(--c3);line-height:1.7;margin-bottom:0;padding-left:2.2rem">Cada artefacto tiene una guía completa con objetivos, prerrequisitos, secuencia didáctica, preguntas orientadoras y rúbrica de evaluación.</p>
+      </details>
+      <details style="background:var(--c5);border-radius:6px;border:1px solid var(--c6);padding:1.2rem 1.5rem">
+        <summary style="font-family:'Playfair Display',serif;font-weight:600;color:var(--c2);cursor:pointer;display:flex;justify-content:space-between;align-items:center;list-style:none">
+          <span style="display:flex;align-items:center;gap:.8rem"><span style="width:28px;height:28px;background:var(--c0);border-radius:100px;display:inline-flex;align-items:center;justify-content:center;color:#fff;font-size:.8rem;font-weight:700;flex-shrink:0">3</span> Explora el simulador con tus estudiantes</span>
+          <span style="color:var(--c0);flex-shrink:0;margin-left:1rem">+</span>
+        </summary>
+        <p style="margin-top:.8rem;font-size:.92rem;color:var(--c3);line-height:1.7;margin-bottom:0;padding-left:2.2rem">La actividad puede durar entre 20 minutos y 2 horas según el artefacto. Están diseñados para grupos o trabajo individual.</p>
+      </details>
+      <details style="background:var(--c5);border-radius:6px;border:1px solid var(--c6);padding:1.2rem 1.5rem">
+        <summary style="font-family:'Playfair Display',serif;font-weight:600;color:var(--c2);cursor:pointer;display:flex;justify-content:space-between;align-items:center;list-style:none">
+          <span style="display:flex;align-items:center;gap:.8rem"><span style="width:28px;height:28px;background:var(--c0);border-radius:100px;display:inline-flex;align-items:center;justify-content:center;color:#fff;font-size:.8rem;font-weight:700;flex-shrink:0">4</span> Facilita la reflexión</span>
+          <span style="color:var(--c0);flex-shrink:0;margin-left:1rem">+</span>
+        </summary>
+        <p style="margin-top:.8rem;font-size:.92rem;color:var(--c3);line-height:1.7;margin-bottom:0;padding-left:2.2rem">Usa las preguntas orientadoras de la guía para moderar una discusión colectiva. Este es el momento central del aprendizaje.</p>
+      </details>
+      <details style="background:var(--c5);border-radius:6px;border:1px solid var(--c6);padding:1.2rem 1.5rem">
+        <summary style="font-family:'Playfair Display',serif;font-weight:600;color:var(--c2);cursor:pointer;display:flex;justify-content:space-between;align-items:center;list-style:none">
+          <span style="display:flex;align-items:center;gap:.8rem"><span style="width:28px;height:28px;background:var(--c0);border-radius:100px;display:inline-flex;align-items:center;justify-content:center;color:#fff;font-size:.8rem;font-weight:700;flex-shrink:0">5</span> Comparte con la comunidad</span>
+          <span style="color:var(--c0);flex-shrink:0;margin-left:1rem">+</span>
+        </summary>
+        <p style="margin-top:.8rem;font-size:.92rem;color:var(--c3);line-height:1.7;margin-bottom:0;padding-left:2.2rem">¿Tienes observaciones o adaptaciones? Las guías son documentos vivos. Puedes contribuir al repositorio abierto de LAMA.</p>
+      </details>
+    </div>
+    <div class="reveal" style="margin-top:2rem;background:var(--c4);border-radius:6px;border:1px solid var(--c6);padding:2rem">
+      <h3 style="font-size:1rem;margin-bottom:1rem">¿Qué incluye cada guía?</h3>
+      <ul style="list-style:none;display:flex;flex-direction:column;gap:.7rem">
+        <li style="display:flex;gap:.8rem"><span style="color:var(--c0);font-weight:700;flex-shrink:0">✓</span><span style="font-size:.9rem">Objetivos de aprendizaje (taxonomía de Bloom)</span></li>
+        <li style="display:flex;gap:.8rem"><span style="color:var(--c0);font-weight:700;flex-shrink:0">✓</span><span style="font-size:.9rem">Contexto teórico y lecturas de apoyo</span></li>
+        <li style="display:flex;gap:.8rem"><span style="color:var(--c0);font-weight:700;flex-shrink:0">✓</span><span style="font-size:.9rem">Secuencia didáctica detallada</span></li>
+        <li style="display:flex;gap:.8rem"><span style="color:var(--c0);font-weight:700;flex-shrink:0">✓</span><span style="font-size:.9rem">Preguntas orientadoras para la discusión</span></li>
+        <li style="display:flex;gap:.8rem"><span style="color:var(--c0);font-weight:700;flex-shrink:0">✓</span><span style="font-size:.9rem">Rúbrica de evaluación adaptable</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ══ GUÍAS ══════════════════════════════════════════ -->
+<section class="sec sec-cream" id="guias">
+  <div class="wrap">
+    <div style="text-align:center;margin-bottom:2.5rem" class="reveal">
+      <span class="sec-label" style="justify-content:center">Recursos disponibles</span>
+      <h2>Guías pedagógicas</h2>
+    </div>
+    <div class="guide-grid">
+      <div class="guide-card reveal d1">
+        <div class="guide-icon">🎰</div>
+        <div>
+          <h4>Guía: Casino de la Atención</h4>
+          <p>Secundaria y universidad · Comunicación, Ciencias Sociales, TIC. Explora la economía de la atención y el diseño persuasivo. Guías en desarrollo.</p>
+        </div>
+      </div>
+      <div class="guide-card reveal d2">
+        <div class="guide-icon">🔍</div>
+        <div>
+          <h4>Guía: Sesgos en Búsquedas</h4>
+          <p>Universidad · Comunicación, Sociología, Ciencias Políticas. Analiza sesgos algorítmicos y representación. Guías en desarrollo.</p>
+        </div>
+      </div>
+      <div class="guide-card reveal d1">
+        <div class="guide-icon">📡</div>
+        <div>
+          <h4>Guía: Simulador de Desinformación</h4>
+          <p>Secundaria y universidad · Periodismo, Ciencias Sociales, Ética. Propagación viral y fact-checking. Guías en desarrollo.</p>
+        </div>
+      </div>
+      <div class="guide-card reveal d2">
+        <div class="guide-icon">🫧</div>
+        <div>
+          <h4>Guía: Cámara de Eco</h4>
+          <p>Universidad · Comunicación, Sociología. Burbujas de filtro y polarización política en redes sociales. Guías en desarrollo.</p>
+        </div>
+      </div>
+      <div class="guide-card reveal d1">
+        <div class="guide-icon">👁️</div>
+        <div>
+          <h4>Guía: Precio de la Privacidad</h4>
+          <p>Secundaria y universidad · Derecho, Informática, Ciencias Sociales. Datos personales y capitalismo de vigilancia. Guías en desarrollo.</p>
+        </div>
+      </div>
+      <div class="guide-card reveal d2">
+        <div class="guide-icon">⚖️</div>
+        <div>
+          <h4>Guía: ¿Quién decide el algoritmo?</h4>
+          <p>Universidad · Filosofía, Ética, Ingeniería. Juego de roles sobre decisiones de diseño algorítmico. Guías en desarrollo.</p>
+        </div>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:2.5rem" class="reveal">
+      <a href="artefactos.html" class="btn btn-outline">Ver todos los artefactos</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══ FOOTER ════════════════════════════════════════ -->
+<footer>
+  <div class="footer-above">
+    <div class="footer-above-grid">
+      <div class="footer-brand">
+        <img src="assets/img/logo.png" alt="LAMA">
+        <p>Laboratorio de Mediaciones Algorítmicas. Escuela de Comunicación Social, Universidad del Valle, Cali, Colombia.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Explorar</h4>
+        <ul>
+          <li><a href="artefactos.html">Artefactos</a></li>
+          <li><a href="para-docentes.html">Para Docentes</a></li>
+          <li><a href="investigacion.html">Investigación</a></li>
+          <li><a href="comunidad.html">Comunidad</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Proyecto</h4>
+        <ul>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="nosotros.html#equipo">Equipo</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Recursos</h4>
+        <ul>
+          <li><a href="http://simuladores.lama.lat" target="_blank" rel="noopener">Simuladores</a></li>
+          <li><a href="investigacion.html#publicaciones">Publicaciones</a></li>
+          <li><a href="para-docentes.html#guias">Guías pedagógicas</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-primary">
+    <div class="footer-primary-inner">
+      <p>© 2024 LAMA — Laboratorio de Mediaciones Algorítmicas. Universidad del Valle.</p>
+      <p>Código abierto · <a href="#">GitHub</a> · <a href="#">CC BY-SA 4.0</a></p>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

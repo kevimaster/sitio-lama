@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Artefactos — LAMA</title>
+<meta name="description" content="Explora los artefactos pedagógicos interactivos de LAMA para la alfabetización algorítmica crítica.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/main.css?v=4">
+<style>
+  h1,h2,h3,h4,h5,h6 { font-family: 'Playfair Display', serif !important; }
+  .intro-bar { display: none; }
+  .card-thumb { padding: 0; overflow: hidden; }
+  .card-thumb img { width: 100%; height: 200px; object-fit: cover; object-position: top center; display: block; }
+</style>
+</head>
+<body>
+
+<!-- ══ NAV ══════════════════════════════════════════ -->
+<nav id="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo"><img src="assets/img/logo.png" alt="LAMA"></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menú"><span></span><span></span><span></span></button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="artefactos.html" class="active">Artefactos</a></li>
+      <li><a href="para-docentes.html">Para Docentes</a></li>
+      <li><a href="investigacion.html">Investigación</a></li>
+      <li><a href="comunidad.html">Comunidad</a></li>
+      <li><a href="nosotros.html">Nosotros</a></li>
+      <li class="nav-cta"><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ══ HERO ══════════════════════════════════════════ -->
+<section class="hero hero-sm">
+  <div class="hero-bg" style="background-image:url('assets/img/Header_Artefactos.jpg')"></div>
+  <div class="hero-content">
+    <span class="sec-label" style="color:rgba(227,233,216,.8)">Herramientas pedagógicas</span>
+    <h1>Artefactos<br>interactivos</h1>
+    <p class="hero-sub">Simuladores, juegos y herramientas de código abierto para explorar, experimentar y reflexionar sobre el impacto de los algoritmos en la vida cotidiana.</p>
+    <div class="hero-btns">
+      <a href="artefactos.html" class="btn btn-primary">Ver guías para docentes</a>
+    </div>
+  </div>
+</section>
+
+<!-- ══ INTRO BAR ══════════════════════════════════════ -->
+<div class="intro-bar">
+  <div class="intro-bar-inner">
+    Más de 10 artefactos disponibles · Código abierto · Listos para usar en el aula · Diseñados desde América Latina
+  </div>
+</div>
+
+<!-- ══ ARTEFACTOS GRID ═══════════════════════════════ -->
+<section class="sec sec-sage">
+  <div class="wrap">
+    <div style="margin-bottom:2rem" class="reveal">
+      <span class="sec-label">Catálogo completo</span>
+      <h2>Todos los artilamas</h2>
+    </div>
+
+    <!-- Filtros -->
+    <div class="filter-tabs reveal">
+      <button class="filter-tab active" data-filter="all">Todos</button>
+      <button class="filter-tab" data-filter="experimental">Experimentación crítica</button>
+      <button class="filter-tab" data-filter="reflexividad">Reflexividad personal</button>
+      <button class="filter-tab" data-filter="debate">Debates algorítmicos</button>
+      <button class="filter-tab" data-filter="vigilancia">Vigilancia y poder</button>
+    </div>
+
+    <!-- Grid -->
+    <div class="cards">
+
+      <div class="card" data-cat="experimental">
+        <div class="card-thumb"><img src="assets/img/Artefactos/Casino_atencion-1024x669.png" alt="El Casino de la Atención"></div>
+        <div class="card-body">
+          <span class="card-badge">Experimentación crítica</span>
+          <h3>El Casino de la Atención</h3>
+          <p>Visibiliza la economía de la atención mediante la metáfora del casino. Cada scroll y notificación tiene un costo real medible en tiempo y concentración.</p>
+          <div class="card-tags">
+            <span class="tag">#economía_de_la_atención</span>
+            <span class="tag">#diseño_persuasivo</span>
+            <span class="tag">#redes_sociales</span>
+          </div>
+          <a href="http://simuladores.lama.lat" class="card-cta" target="_blank" rel="noopener">Explorar →</a>
+        </div>
+      </div>
+
+      <div class="card" data-cat="reflexividad">
+        <div class="card-thumb"><img src="assets/img/Artefactos/Analizador_de_sesgos_2-1024x724.png" alt="Analizador de Sesgos en Búsquedas"></div>
+        <div class="card-body">
+          <span class="card-badge">Reflexividad personal</span>
+          <h3>Analizador de Sesgos en Búsquedas</h3>
+          <p>Simula resultados de búsqueda evidenciando sesgos raciales y de género. Basado en la investigación de Safiya Noble sobre algoritmos de opresión.</p>
+          <div class="card-tags">
+            <span class="tag">#algoritmos_de_opresión</span>
+            <span class="tag">#sesgos</span>
+            <span class="tag">#género</span>
+          </div>
+          <a href="https://simuladores.lama.lat/simuladores/analizador-sesgos-busquedas/" class="card-cta" target="_blank" rel="noopener">Explorar →</a>
+        </div>
+      </div>
+
+      <div class="card" data-cat="experimental">
+        <div class="card-thumb"><img src="assets/img/Artefactos/Simulador_de_desinformacion.png" alt="Simulador de Desinformación"></div>
+        <div class="card-body">
+          <span class="card-badge">Experimentación crítica</span>
+          <h3>Simulador de Desinformación</h3>
+          <p>Simula la propagación de información verdadera y falsa en redes sociales. Experimenta con fact-checkers y alfabetización mediática en tiempo real.</p>
+          <div class="card-tags">
+            <span class="tag">#desinformación</span>
+            <span class="tag">#redes_sociales</span>
+            <span class="tag">#fake_news</span>
+          </div>
+          <a href="https://simuladores.lama.lat/simuladores/dinamicas-desinformacion/" class="card-cta" target="_blank" rel="noopener">Explorar →</a>
+        </div>
+      </div>
+
+      <div class="card" data-cat="debate">
+        <div class="card-thumb"><img src="assets/img/Artefactos/Camara_de_eco.png" alt="La Cámara de Eco"></div>
+        <div class="card-body">
+          <span class="card-badge">Debates algorítmicos</span>
+          <h3>La Cámara de Eco</h3>
+          <p>Demuestra cómo los algoritmos de recomendación crean burbujas de filtro que refuerzan las creencias existentes y limitan la exposición a perspectivas diversas.</p>
+          <div class="card-tags">
+            <span class="tag">#cámara_de_eco</span>
+            <span class="tag">#filtro_burbuja</span>
+            <span class="tag">#polarización</span>
+          </div>
+          <a href="https://simuladores.lama.lat/simuladores/camara-de-eco/" class="card-cta" target="_blank" rel="noopener">Explorar →</a>
+        </div>
+      </div>
+
+      <!-- [DESACTIVADA TEMPORALMENTE] El Precio de la Privacidad
+      <div class="card" data-cat="vigilancia">
+        <div class="card-thumb">👁️</div>
+        <div class="card-body">
+          <span class="card-badge">Vigilancia y poder</span>
+          <h3>El Precio de la Privacidad</h3>
+          <p>Calcula el valor económico de tus datos personales y visualiza cómo las plataformas construyen perfiles detallados para la publicidad dirigida.</p>
+          <div class="card-tags">
+            <span class="tag">#datos_personales</span>
+            <span class="tag">#capitalismo_de_vigilancia</span>
+            <span class="tag">#privacidad</span>
+          </div>
+          <a href="http://simuladores.lama.lat" class="card-cta" target="_blank" rel="noopener">Explorar →</a>
+        </div>
+      </div>
+      -->
+
+      <!-- [DESACTIVADA TEMPORALMENTE] ¿Quién decide el algoritmo?
+      <div class="card" data-cat="debate">
+        <div class="card-thumb">⚖️</div>
+        <div class="card-body">
+          <span class="card-badge">Debates algorítmicos</span>
+          <h3>¿Quién decide el algoritmo?</h3>
+          <p>Juego de roles donde los participantes toman decisiones de diseño algorítmico y observan sus consecuencias en grupos sociales diversos.</p>
+          <div class="card-tags">
+            <span class="tag">#poder_algorítmico</span>
+            <span class="tag">#ética</span>
+            <span class="tag">#decisión</span>
+          </div>
+          <a href="http://simuladores.lama.lat" class="card-cta" target="_blank" rel="noopener">Explorar →</a>
+        </div>
+      </div>
+      -->
+
+      <!-- [DESACTIVADA TEMPORALMENTE] Mi Huella Algorítmica
+      <div class="card" data-cat="reflexividad">
+        <div class="card-thumb">🤖</div>
+        <div class="card-body">
+          <span class="card-badge">Reflexividad personal</span>
+          <h3>Mi Huella Algorítmica</h3>
+          <p>Mapa interactivo de las plataformas que te conocen mejor que tú mismo. Visualiza qué datos recopila cada app y qué inferencias hace sobre ti.</p>
+          <div class="card-tags">
+            <span class="tag">#huella_digital</span>
+            <span class="tag">#identidad</span>
+            <span class="tag">#inferencia</span>
+          </div>
+          <a href="http://simuladores.lama.lat" class="card-cta" target="_blank" rel="noopener">Explorar →</a>
+        </div>
+      </div>
+      -->
+
+      <!-- [DESACTIVADA TEMPORALMENTE] Ciudad Inteligente
+      <div class="card" data-cat="vigilancia">
+        <div class="card-thumb">🏙️</div>
+        <div class="card-body">
+          <span class="card-badge">Vigilancia y poder</span>
+          <h3>Ciudad Inteligente</h3>
+          <p>Simula el despliegue de tecnologías de vigilancia en una ciudad y explora las tensiones entre seguridad pública y derechos civiles.</p>
+          <div class="card-tags">
+            <span class="tag">#ciudades_inteligentes</span>
+            <span class="tag">#reconocimiento_facial</span>
+            <span class="tag">#derechos</span>
+          </div>
+          <a href="http://simuladores.lama.lat" class="card-cta" target="_blank" rel="noopener">Explorar →</a>
+        </div>
+      </div>
+      -->
+
+      <div class="card" data-cat="debate">
+        <div class="card-thumb"><img src="assets/img/Artefactos/Feed_personalizado.png" alt="Tu Feed Personalizado"></div>
+        <div class="card-body">
+          <span class="card-badge">Debates algorítmicos</span>
+          <h3>Tu Feed Personalizado</h3>
+          <p>Explora cómo los algoritmos de recomendación construyen tu burbuja informativa. Cada interacción moldea lo que ves —y lo que nunca llegarás a ver.</p>
+          <div class="card-tags">
+            <span class="tag">#recomendación</span>
+            <span class="tag">#burbuja_informativa</span>
+            <span class="tag">#personalización</span>
+          </div>
+          <a href="https://simuladores.lama.lat/simuladores/el-feed/" class="card-cta" target="_blank" rel="noopener">Explorar →</a>
+        </div>
+      </div>
+
+      <!-- [DESACTIVADA TEMPORALMENTE] El Sesgo Invisible
+      <div class="card" data-cat="reflexividad">
+        <div class="card-thumb">👓</div>
+        <div class="card-body">
+          <span class="card-badge">Reflexividad personal</span>
+          <h3>El Sesgo Invisible</h3>
+          <p>Experiencia interactiva sobre los sesgos algorítmicos que operan sin hacerse visibles. Revela los mecanismos que filtran y jerarquizan información sin que lo percibamos.</p>
+          <div class="card-tags">
+            <span class="tag">#sesgos</span>
+            <span class="tag">#invisibilidad_algorítmica</span>
+            <span class="tag">#percepción</span>
+          </div>
+          <a href="https://simuladores.lama.lat/simuladores/el-sesgo-invisible/" class="card-cta" target="_blank" rel="noopener">Explorar →</a>
+        </div>
+      </div>
+      -->
+
+      <div class="card" data-cat="experimental">
+        <div class="card-thumb"><img src="assets/img/Artefactos/Viral_por_grupos_sociales.png" alt="Viral por Grupos Sociales"></div>
+        <div class="card-body">
+          <span class="card-badge">Experimentación crítica</span>
+          <h3>Viral por Grupos Sociales</h3>
+          <p>Simulación de difusión viral segmentada por grupos sociodemográficos. El mismo contenido recorre trayectorias radicalmente distintas según el perfil del receptor.</p>
+          <div class="card-tags">
+            <span class="tag">#viralidad</span>
+            <span class="tag">#segmentación</span>
+            <span class="tag">#difusión</span>
+          </div>
+          <a href="https://simuladores.lama.lat/simuladores/viral-grupos-sociales/" class="card-cta" target="_blank" rel="noopener">Explorar →</a>
+        </div>
+      </div>
+
+      <div class="card" data-cat="vigilancia">
+        <div class="card-thumb"><img src="assets/img/Artefactos/Enjambre_de_datos.png" alt="Enjambre de Datos Personal"></div>
+        <div class="card-body">
+          <span class="card-badge">Vigilancia y poder</span>
+          <h3>Enjambre de Datos Personal</h3>
+          <p>Visualización del rastro de datos que dejamos en plataformas digitales. Materializa la magnitud de la información que cedemos con cada interacción cotidiana.</p>
+          <div class="card-tags">
+            <span class="tag">#datos_personales</span>
+            <span class="tag">#rastro_digital</span>
+            <span class="tag">#privacidad</span>
+          </div>
+          <a href="https://simuladores.lama.lat/simuladores/enjambre-datos/" class="card-cta" target="_blank" rel="noopener">Explorar →</a>
+        </div>
+      </div>
+
+      <!-- [DESACTIVADA TEMPORALMENTE] Anatomía de un Sistema Algorítmico
+      <div class="card" data-cat="experimental">
+        <div class="card-thumb">🔬</div>
+        <div class="card-body">
+          <span class="card-badge">Experimentación crítica</span>
+          <h3>Anatomía de un Sistema Algorítmico</h3>
+          <p>Disección interactiva de la arquitectura interna de un sistema algorítmico. Abre la caja negra y expone las decisiones de diseño que moldean sus resultados.</p>
+          <div class="card-tags">
+            <span class="tag">#caja_negra</span>
+            <span class="tag">#arquitectura_algorítmica</span>
+            <span class="tag">#transparencia</span>
+          </div>
+          <a href="https://simuladores.lama.lat/simuladores/anatomia-sistema-algoritmico/" class="card-cta" target="_blank" rel="noopener">Explorar →</a>
+        </div>
+      </div>
+      -->
+
+      <div class="card" data-cat="debate">
+        <div class="card-thumb"><img src="assets/img/Artefactos/El_ensamblaje.png" alt="Ensamblaje Sociotécnico"></div>
+        <div class="card-body">
+          <span class="card-badge">Debates algorítmicos</span>
+          <h3>Ensamblaje Sociotécnico</h3>
+          <p>Modelo de los actores humanos y técnicos que configuran las plataformas digitales. Revela que los algoritmos emergen de redes de decisiones, intereses y relaciones de poder.</p>
+          <div class="card-tags">
+            <span class="tag">#actores</span>
+            <span class="tag">#plataformas</span>
+            <span class="tag">#poder_técnico</span>
+          </div>
+          <a href="https://simuladores.lama.lat/simuladores/ensamblaje-sociotecnico/" class="card-cta" target="_blank" rel="noopener">Explorar →</a>
+        </div>
+      </div>
+
+      <div class="card" data-cat="reflexividad">
+        <div class="card-thumb"><img src="assets/img/Artefactos/Simulador_de_sesgos_en_narrativas_historicas.png" alt="Sesgos en Narrativas Históricas"></div>
+        <div class="card-body">
+          <span class="card-badge">Reflexividad personal</span>
+          <h3>Sesgos en Narrativas Históricas</h3>
+          <p>Simulador que revela cómo los sesgos algorítmicos distorsionan el relato histórico. Analiza qué voces amplifican los sistemas y cuáles silencian sistemáticamente.</p>
+          <div class="card-tags">
+            <span class="tag">#historia</span>
+            <span class="tag">#sesgos</span>
+            <span class="tag">#representación</span>
+          </div>
+          <a href="https://simuladores.lama.lat/simuladores/sesgos-narrativas-historicas/" class="card-cta" target="_blank" rel="noopener">Explorar →</a>
+        </div>
+      </div>
+
+      <div class="card" data-cat="debate">
+        <div class="card-thumb"><img src="assets/img/Artefactos/Algoritmos_El_juego_de_cartas.png" alt="Algoritmos: El Juego de Cartas"></div>
+        <div class="card-body">
+          <span class="card-badge">Debates algorítmicos</span>
+          <h3>Algoritmos: El Juego de Cartas</h3>
+          <p>Dinámica lúdica para comprender los algoritmos de recomendación. A través del juego, los participantes descubren qué contenidos se priorizan y cuáles desaparecen.</p>
+          <div class="card-tags">
+            <span class="tag">#juego</span>
+            <span class="tag">#recomendación</span>
+            <span class="tag">#lúdica_crítica</span>
+          </div>
+          <a href="https://simuladores.lama.lat/simuladores/algoritmos-card-game/" class="card-cta" target="_blank" rel="noopener">Explorar →</a>
+        </div>
+      </div>
+
+      <div class="card" data-cat="debate">
+        <div class="card-thumb"><img src="assets/img/Artefactos/Mi_apuesta_editorial.png" alt="Mi Apuesta Editorial"></div>
+        <div class="card-body">
+          <span class="card-badge">Debates algorítmicos</span>
+          <h3>Mi Apuesta Editorial</h3>
+          <p>Juego de decisiones sobre autonomía e independencia de medios digitales nativos. Explora las tensiones entre viabilidad económica, independencia editorial e integridad periodística.</p>
+          <div class="card-tags">
+            <span class="tag">#medios_digitales</span>
+            <span class="tag">#independencia_editorial</span>
+            <span class="tag">#periodismo</span>
+          </div>
+          <a href="https://simuladores.lama.lat/simuladores/mi-apuesta-editorial/" class="card-cta" target="_blank" rel="noopener">Explorar →</a>
+        </div>
+      </div>
+
+      <div class="card" data-cat="vigilancia">
+        <div class="card-thumb"><img src="assets/img/Artefactos/Panoptico_digital_Quien_te_gobierna.png" alt="Panóptico Digital: ¿Quién te Gobierna?"></div>
+        <div class="card-body">
+          <span class="card-badge">Vigilancia y poder</span>
+          <h3>Panóptico Digital: ¿Quién te Gobierna?</h3>
+          <p>Simulador que revela cómo los datos cotidianos construyen perfiles de vigilancia y poder. Hace tangible la forma en que el control se ejerce a través del conocimiento de nuestros comportamientos digitales.</p>
+          <div class="card-tags">
+            <span class="tag">#vigilancia</span>
+            <span class="tag">#poder</span>
+            <span class="tag">#datos_personales</span>
+          </div>
+          <a href="https://simuladores.lama.lat/simuladores/panoptico-digital/" class="card-cta" target="_blank" rel="noopener">Explorar →</a>
+        </div>
+      </div>
+
+      <div class="card" data-cat="vigilancia">
+        <div class="card-thumb"><img src="assets/img/Artefactos/Data_mine.png" alt="Data Mine: Economía de Datos"></div>
+        <div class="card-body">
+          <span class="card-badge">Vigilancia y poder</span>
+          <h3>Data Mine: Economía de Datos</h3>
+          <p>Juego de decisiones sobre extracción, comercio y ética de datos personales. Enfrenta a los participantes con las consecuencias reales del modelo de negocio que sustenta las plataformas digitales.</p>
+          <div class="card-tags">
+            <span class="tag">#economía_de_datos</span>
+            <span class="tag">#extracción</span>
+            <span class="tag">#ética</span>
+          </div>
+          <a href="https://simuladores.lama.lat/simuladores/data-mine-simulador/" class="card-cta" target="_blank" rel="noopener">Explorar →</a>
+        </div>
+      </div>
+
+      <div class="card" data-cat="vigilancia">
+        <div class="card-thumb"><img src="assets/img/Artefactos/Simulador_click_Worker.png" alt="Simulador Click-Worker"></div>
+        <div class="card-body">
+          <span class="card-badge">Vigilancia y poder</span>
+          <h3>Simulador Click-Worker</h3>
+          <p>Sistema de anotación crítica para entrenamiento de visión artificial. Sus etiquetas alimentan un modelo de vigilancia autónoma regional.</p>
+          <div class="card-tags">
+            <span class="tag">#visión_artificial</span>
+            <span class="tag">#vigilancia_autónoma</span>
+            <span class="tag">#anotación_crítica</span>
+          </div>
+          <a href="#" class="card-cta" style="opacity:.5;pointer-events:none;cursor:default">Próximamente</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══ MEDIACIONES PEDAGÓGICAS ════════════════════════ -->
+<section class="sec sec-sage">
+  <div class="wrap">
+    <div style="margin-bottom:2.5rem" class="reveal">
+      <span class="sec-label">Más allá de la alfabetización</span>
+      <h2>Mediaciones Pedagógicas</h2>
+      <p style="max-width:780px;margin-top:1.2rem;font-size:1rem;line-height:1.8;color:var(--c3)">En LAMA hemos aprendido que la apropiación crítica de la inteligencia artificial generativa no solo sirve para reflexionar sobre la IA misma: también nos permite potenciar procesos de aprendizaje sobre cualquier campo del conocimiento. Estos artefactos nacen de esa apuesta expandida. Lo que los hace valiosos no es únicamente el simulador en sí: es el ensamblaje que ocurre a su alrededor —la presentación, la exploración colectiva, la retroalimentación, el diálogo que emerge. La experiencia pedagógica completa.</p>
+    </div>
+    <div class="cards">
+
+      <div class="card">
+        <div class="card-thumb"><img src="assets/img/Artefactos/Radar_de_capacidades_periodisticas.png" alt="Radar de Capacidades Periodísticas"></div>
+        <div class="card-body">
+          <span class="card-badge">Diagnóstico</span>
+          <h3>Radar de Capacidades Periodísticas</h3>
+          <p>Herramienta de diagnóstico de competencias digitales para periodistas. Genera un perfil visual de fortalezas y áreas de desarrollo en un ecosistema mediático en transformación acelerada.</p>
+          <div class="card-tags">
+            <span class="tag">#periodismo</span>
+            <span class="tag">#competencias_digitales</span>
+            <span class="tag">#diagnóstico</span>
+          </div>
+          <a href="https://simuladores.lama.lat/simuladores/radar-capacidades/" class="card-cta" target="_blank" rel="noopener">Explorar →</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-thumb"><img src="assets/img/Artefactos/Evaluador_agentico_de_sistematizacion.png" alt="Evaluador Agéntico de Sistematización"></div>
+        <div class="card-body">
+          <span class="card-badge">Análisis de experiencias</span>
+          <h3>Evaluador Agéntico de Sistematización</h3>
+          <p>Consultor inteligente con IA para acompañar procesos de sistematización de experiencias. Diseñado para la Maestría en Educación de la Universidad del Valle: transforma la reflexión sobre la práctica en conocimiento transferible.</p>
+          <div class="card-tags">
+            <span class="tag">#sistematización</span>
+            <span class="tag">#educación</span>
+            <span class="tag">#IA_generativa</span>
+          </div>
+          <a href="https://simuladores.lama.lat/simuladores/evaluador-agentico-sistematizacion/" class="card-cta" target="_blank" rel="noopener">Explorar →</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-thumb"><img src="assets/img/Artefactos/Ando_cotorreando.png" alt="Ando Cotorreando"></div>
+        <div class="card-body">
+          <span class="card-badge">Producción narrativa</span>
+          <h3>Ando Cotorreando</h3>
+          <p>Herramienta que convierte transcripciones de audio en crónica narrativa. Un aliado para la producción periodística situada y la documentación de voces comunitarias mediante IA generativa.</p>
+          <div class="card-tags">
+            <span class="tag">#crónica</span>
+            <span class="tag">#audio</span>
+            <span class="tag">#periodismo_narrativo</span>
+          </div>
+          <a href="https://simuladores.lama.lat/simuladores/ando-cotorreando/" class="card-cta" target="_blank" rel="noopener">Explorar →</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-thumb"><img src="assets/img/Artefactos/Captura de pantalla 2026-04-30 a las 14.18.17.png" alt="BioMotion Art"></div>
+        <div class="card-body">
+          <span class="card-badge">Exploración artística</span>
+          <h3>BioMotion Art</h3>
+          <p>Exploración artística del movimiento biológico a través de visualizaciones interactivas. Un artefacto en la frontera entre ciencia, arte y tecnología que invita a repensar los límites de lo que puede enseñarse de forma experiencial.</p>
+          <div class="card-tags">
+            <span class="tag">#arte</span>
+            <span class="tag">#visualización</span>
+            <span class="tag">#movimiento_biológico</span>
+          </div>
+          <a href="https://simuladores.lama.lat/simuladores/biomotion-art/" class="card-cta" target="_blank" rel="noopener">Explorar →</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-thumb"><img src="assets/img/Artefactos/CiudadVaga_Laboratorio_de_eventos.png" alt="Ciudad Vaga: Laboratorio de Eventos"></div>
+        <div class="card-body">
+          <span class="card-badge">Simulación de gestión</span>
+          <h3>Ciudad Vaga: Laboratorio de Eventos</h3>
+          <p>Simulador de roles para la creación y gestión de eventos culturales. Desarrollado con y para Ciudad Vaga, Cali: un ejemplo de cómo los artefactos pedagógicos se anclan en territorios y culturas concretas.</p>
+          <div class="card-tags">
+            <span class="tag">#cultura</span>
+            <span class="tag">#gestión_cultural</span>
+            <span class="tag">#territorio</span>
+          </div>
+          <a href="https://simuladores.lama.lat/simuladores/ciudadvaga-laboratorio-eventos/" class="card-cta" target="_blank" rel="noopener">Explorar →</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-thumb"><img src="assets/img/Artefactos/Taller_Ludogenesis.png" alt="Taller Ludogénesis"></div>
+        <div class="card-body">
+          <span class="card-badge">Diseño lúdico</span>
+          <h3>Taller Ludogénesis</h3>
+          <p>Herramienta para crear mecánicas lúdicas con intención pedagógica. Acompaña el diseño de juegos educativos situados: de la idea al prototipo, con IA como co-diseñadora del proceso.</p>
+          <div class="card-tags">
+            <span class="tag">#juegos_educativos</span>
+            <span class="tag">#diseño_pedagógico</span>
+            <span class="tag">#lúdica</span>
+          </div>
+          <a href="https://simuladores.lama.lat/simuladores/taller-ludogenesis/" class="card-cta" target="_blank" rel="noopener">Explorar →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══ CTA DOCENTES ═══════════════════════════════════ -->
+<div class="territorial">
+  <div class="territorial-bg" style="background-image:url('assets/img/Images3.jpg')"></div>
+  <div class="territorial-content">
+    <span class="sec-label">Para el aula</span>
+    <h2>¿Eres docente?<br>Tenemos guías para ti</h2>
+    <p>Cada artefacto incluye una guía pedagógica con objetivos de aprendizaje, preguntas orientadoras, actividades complementarias y criterios de evaluación. Listos para usar desde hoy.</p>
+    <div class="territorial-ctas">
+      <a href="para-docentes.html" class="btn btn-primary">Ver guías pedagógicas</a>
+      <a href="contacto.html" class="btn btn-outline-white">Solicitar taller</a>
+    </div>
+  </div>
+</div>
+
+<!-- ══ FOOTER ════════════════════════════════════════ -->
+<footer>
+  <div class="footer-above">
+    <div class="footer-above-grid">
+      <div class="footer-brand">
+        <img src="assets/img/logo.png" alt="LAMA">
+        <p>Laboratorio de Mediaciones Algorítmicas. Escuela de Comunicación Social, Universidad del Valle, Cali, Colombia.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Explorar</h4>
+        <ul>
+          <li><a href="artefactos.html">Artefactos</a></li>
+          <li><a href="para-docentes.html">Para Docentes</a></li>
+          <li><a href="investigacion.html">Investigación</a></li>
+          <li><a href="comunidad.html">Comunidad</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Proyecto</h4>
+        <ul>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="nosotros.html#equipo">Equipo</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Recursos</h4>
+        <ul>
+          <li><a href="http://simuladores.lama.lat" target="_blank" rel="noopener">Simuladores</a></li>
+          <li><a href="investigacion.html#publicaciones">Publicaciones</a></li>
+          <li><a href="para-docentes.html#guias">Guías pedagógicas</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-primary">
+    <div class="footer-primary-inner">
+      <p>© 2024 LAMA — Laboratorio de Mediaciones Algorítmicas. Universidad del Valle.</p>
+      <p>Código abierto · <a href="#">GitHub</a> · <a href="#">CC BY-SA 4.0</a></p>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
