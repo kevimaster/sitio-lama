@@ -79,10 +79,10 @@ nav.scrolled { box-shadow: 0 2px 16px rgba(52,63,30,.08); }
 .nav-inner {
   max-width: var(--max); margin: 0 auto;
   padding: 0 20px;
-  height: 70px;
+  height: 88px;
   display: flex; align-items: center; justify-content: space-between;
 }
-.nav-logo img { height: 42px; width: auto; display: block; }
+.nav-logo img { height: 54px; width: auto; display: block; }
 .nav-links {
   display: flex; align-items: center;
   gap: 0; list-style: none;
@@ -95,7 +95,7 @@ nav.scrolled { box-shadow: 0 2px 16px rgba(52,63,30,.08); }
   padding: 0 18px;
   display: block;
   transition: color .2s;
-  line-height: 70px;
+  line-height: 88px;
 }
 .nav-links li a:hover,
 .nav-links li a.active { color: var(--c1); }
@@ -122,7 +122,7 @@ nav.scrolled { box-shadow: 0 2px 16px rgba(52,63,30,.08); }
 
 /* ── HERO ───────────────────────────────────────────── */
 .hero {
-  margin-top: 70px;
+  margin-top: 88px;
   position: relative;
   min-height: 56vh;
   display: flex; align-items: center;
@@ -156,7 +156,7 @@ nav.scrolled { box-shadow: 0 2px 16px rgba(52,63,30,.08); }
 
 /* Hero pequeño (subpáginas) */
 .hero-sm {
-  margin-top: 70px;
+  margin-top: 88px;
   position: relative;
   min-height: 36vh;
   display: flex; align-items: center;
@@ -580,7 +580,7 @@ nav.scrolled { box-shadow: 0 2px 16px rgba(52,63,30,.08); }
   .footer-above-grid { grid-template-columns: 1fr 1fr; gap: 2rem; }
 }
 @media (max-width: 768px) {
-  .nav-links { display: none; flex-direction: column; position: absolute; top: 70px; left: 0; right: 0; background: var(--c5); border-bottom: 1px solid var(--c6); padding: 1rem 0; }
+  .nav-links { display: none; flex-direction: column; position: absolute; top: 88px; left: 0; right: 0; background: var(--c5); border-bottom: 1px solid var(--c6); padding: 1rem 0; }
   .nav-links.open { display: flex; }
   .nav-links li a { line-height: 1; padding: 12px 20px; }
   .nav-links li.nav-cta a { margin: 8px 20px; display: inline-block; line-height: 1; }
