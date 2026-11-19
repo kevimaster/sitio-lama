@@ -10,9 +10,15 @@ window.addEventListener('scroll', () => {
 const toggle = document.getElementById('navToggle');
 const links  = document.getElementById('navLinks');
 if (toggle && links) {
-  toggle.addEventListener('click', () => links.classList.toggle('open'));
+  toggle.addEventListener('click', () => {
+    const open = links.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
   document.addEventListener('click', e => {
-    if (!nav.contains(e.target)) links.classList.remove('open');
+    if (!nav.contains(e.target)) {
+      links.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
+    }
   });
 }
 
@@ -41,20 +47,34 @@ tabs.forEach(tab => {
 });
 
 // ── Contact / community form ───────────────────────
+// Solución provisional: el sitio no tiene todavía un servicio que reciba los
+// formularios. Antes, el envío se cancelaba y se mostraba "Mensaje enviado"
+// sin que el mensaje saliera. Ahora se abre el programa de correo del
+// visitante con el mensaje redactado y se le indica el correo de respaldo.
 const form = document.getElementById('contactForm');
 if (form) {
   form.addEventListener('submit', e => {
     e.preventDefault();
-    const btn = form.querySelector('button[type="submit"]');
-    btn.textContent = '✓ Mensaje enviado';
-    btn.disabled = true;
-    btn.style.background = '#70A309';
-    setTimeout(() => {
-      form.reset();
-      btn.textContent = 'Enviar mensaje';
-      btn.disabled = false;
-      btn.style.background = '';
-    }, 4000);
+    const to = (form.getAttribute('action') || '').replace(/^mailto:/, '');
+    const data = new FormData(form);
+    const esComunidad = !!form.querySelector('[name="perfil"]');
+    const asunto = esComunidad
+      ? 'Solicitud de acceso a la comunidad LAMA'
+      : 'Contacto LAMA: ' + (data.get('motivo') || 'mensaje');
+    const lineas = [];
+    data.forEach((v, k) => { if (String(v).trim()) lineas.push(k + ': ' + v); });
+    window.location.href = 'mailto:' + to + '?subject=' + encodeURIComponent(asunto) +
+      '&body=' + encodeURIComponent(lineas.join('\n'));
+    let aviso = form.querySelector('.form-aviso');
+    if (!aviso) {
+      aviso = document.createElement('p');
+      aviso.className = 'form-aviso';
+      aviso.setAttribute('role', 'status');
+      aviso.style.cssText = 'margin-top:1rem;font-size:.9rem;text-align:center';
+      form.appendChild(aviso);
+    }
+    aviso.innerHTML = 'Abrimos tu programa de correo con el mensaje listo: solo falta que lo envíes. ' +
+      'Si no se abrió, escríbenos a <a href="mailto:' + to + '">' + to + '</a>.';
   });
 }
 
